@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <h1>{process.env.REACT_APP_AIRTABLE_API}</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
