@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import useData from "../hooks/useData";
+import Table from '../sections/Table';
 
 export default function Landing() {
   const { data, getData } = useData();
@@ -10,11 +11,11 @@ export default function Landing() {
     }
     onPageLoad();
   }, []);
-  
+
   return (
     <div className="page">
       <h3>Airtable data</h3>
-      {data && console.log(data)}
+      {data && <Table data={data}/>}
     </div>
   );
 }
